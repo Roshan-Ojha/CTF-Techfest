@@ -1,0 +1,351 @@
+*.tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+  .header {
+    background-image: linear-gradient(-45deg, black, black, black);
+    background-image: url(../images/logo.png);
+    background-repeat: no-repeat;
+    background-position: 20px, 30px;
+    margin: 0;
+    height: 20px;
+    max-width: 100%;
+  }
+  
+  /* body {
+          background: #000;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          height: 100vh;
+        } */
+  
+  canvas {
+    width:100vw;    
+    display: block;
+    height: 155%;
+    position: absolute;
+    z-index: -999999999999999999999999999999999999999999;
+  }
+  
+  /* .content {
+          display: flex;
+          color: #6cff6c;
+          justify-content: center;
+  align-items: center;
+          flex-direction: column;
+          width: 1000px;
+          height: 300px;
+          padding: 90px;
+          border-radius: 5px;
+          border: 1px solid rgb(225, 101, 230);
+          font-size: 26px;
+          background-color: rgba(59, 128, 24, 0.85);
+        }
+   */
+  .Container {
+    display: inline-block;
+  }
+  
+  #firstContainer {
+    margin: 25px;
+  }
+  
+  .first,
+  .second {
+    font-family: monospace;
+    font-size: 40px;
+    overflow: hidden;
+    letter-spacing: 0.15rem;
+    white-space: nowrap;
+    border-right: 0.15rem solid;
+  }
+  
+  .second {
+    visibility: hidden;
+  }
+  
+  .typing {
+    /* background-color: white; */
+    animation: typing 3.5s steps(40) forwards, blink-caret 0.75s step-end infinite;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: white;
+    }
+  }
+  
+  .buttons {
+    visibility: hidden;
+    width: 100%;
+    margin-top: 45px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
+  .Register,
+  .Login {
+    cursor: pointer;
+  }
+  
+  svg:hover path {
+    fill: #0f0;
+    stroke: #0f0;
+  }
+  
+  svg:hover text {
+    fill: rgba(0, 0, 0, 0.65);
+  }
+  .nav-menu {
+    background-color: black;
+    width: 100%;
+    float: left;
+    display: flex;
+    flex-direction:row-reverse;
+  }
+  
+  .nav1 {
+    flex-direction: column;
+    display: flex;
+    background-color: black;
+  
+    float: right;
+  }
+  nav {
+    display: flex;
+    float: right;
+    flex-direction: row;
+  }
+  a {
+    color: white;
+    text-decoration: none;
+    float: right;
+    text-indent: 200px;
+  }
+  
+  nav {
+    background: #333;
+  }
+  
+  nav > ul {
+    margin: 0 auto;
+    width: 100px;
+  }
+  
+  nav ul li {
+    float: left;
+    margin-left: 40px;
+    position: relative;
+  }
+  
+  nav ul a {
+    float: left;
+    width: 200px;
+    padding: 10px 20px;
+  }
+  
+  /* nav ul a:hover {
+    background: black;
+  } */
+  
+  nav ul li {
+    float: none;
+    display: flex;
+    text-indent: 100px;
+  }
+  
+  nav ul li ul {
+    display: none;
+    position: absolute;
+    background: #333;
+    top: 42px;
+  }
+  
+  nav ul li:hover > ul {
+    display: block;
+  }
+  
+  nav ul li a {
+    display: block;
+  }
+  
+  .gfg {
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .tooltip .dot {
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  .accordion {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    padding: 0px;
+    text-align: left;
+    border: none;
+    outline: none;
+    font-size: 25px;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active,
+  .accordion:hover {
+    background-color: white;
+  }
+  
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    padding: 0;
+    background-color: white;
+    display: contents;
+    overflow: hidden;
+  }
+  
+  .tooltip .info-box {
+    display: none;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    font-size: 18px;
+    transform: translateX(0%);
+    width: 500px; /* Set the width of the tooltip */
+    background-color: burlywood;
+    color: black;
+    border-radius: 8px;
+    white-space: normal; /* Allow line breaks */
+  }
+  
+  .tooltip:active .info-box {
+    display: block;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 3rem;
+  }
+  
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    font-size: 1.5rem;
+  }
+  
+  label {
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  hr {
+    margin: 20px 0;
+    border: none;
+    border-top: 1px solid #ccc;
+  }
+  
+  .section-title {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .sub-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .status {
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  
+  textarea {
+    width: 100%;
+    overflow: auto;
+    resize: none;
+  }
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  footer p {
+    margin: 5px 0;
+  }
+  
+  footer a {
+    text-decoration: none;
+    color: #007bff; /* Link color */
+  }
+  
+  footer a:hover {
+    text-decoration: underline; /* Underline on hover */
+  }
+  
+  /* Twitter logo size */
+  footer img {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    margin-right: 5px; /* Add spacing between the Twitter logo and text */
+  }
