@@ -23,8 +23,8 @@
         } */
   
   canvas {
-    width:100vw;    
-    display: block;
+    width:100%;    
+    display: inline-block;
     height: 155vh;
     position: absolute;
     z-index: -999999999999999999999999999999999999999999;
@@ -259,7 +259,7 @@
   main {
     max-width: 800px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 20px 20px 5px 5px;
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
